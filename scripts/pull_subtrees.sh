@@ -4,7 +4,7 @@
 # prefix remote_name branch
 awk '
 !/^($|[:space:]*#)/ {
-  cmd = "git subtree pull -P " $1 " " $2 " " $3;
+  cmd = "git subtree pull -P " $1 " " $2 " " $3 " --squash";
   print cmd;
   system(cmd);
 }
