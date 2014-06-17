@@ -1,0 +1,5 @@
+/.vagrant
+/saltstack/pillar/*
+!/saltstack/pillar/README.md
+/saltstack/salt/*
+!/saltstack/salt/README.md

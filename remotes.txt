@@ -1,0 +1,13 @@
+# Format:
+# remote_name repo
+apache-saltstack-formula    git@github.com:moreda/apache-saltstack-formula.git
+mysql-saltstack-formula     git@github.com:moreda/mysql-saltstack-formula.git
+nginx-saltstack-formula     git@github.com:moreda/nginx-saltstack-formula.git
+php5-saltstack-formula      git@github.com:moreda/php5-saltstack-formula.git
+shorewall-saltstack-formula git@github.com:moreda/shorewall-saltstack-formula.git
+sudo-saltstack-formula      git@github.com:moreda/sudo-saltstack-formula.git
+system-saltstack-formula    git@github.com:moreda/system-saltstack-formula.git
+users-saltstack-formula     git@github.com:moreda/users-saltstack-formula.git
+zabbix-saltstack-formula    git@github.com:moreda/zabbix-saltstack-formula.git
+zabbix-formula              git@github.com:saltstack-formulas/zabbix-formula.git
+varnish-formula             git@github.com:saltstack-formulas/varnish-formula.git
