@@ -402,6 +402,16 @@ file_client: local
 file_roots:
   base:
     - /srv/saltstack/salt
+    - /srv/saltstack/salt-formulas/apache-saltstack-formula
+    - /srv/saltstack/salt-formulas/mysql-saltstack-formula
+    - /srv/saltstack/salt-formulas/nginx-saltstack-formula
+    - /srv/saltstack/salt-formulas/php5-saltstack-formula
+    - /srv/saltstack/salt-formulas/shorewall-saltstack-formula
+    - /srv/saltstack/salt-formulas/sudo-saltstack-formula
+    - /srv/saltstack/salt-formulas/system-saltstack-formula
+    - /srv/saltstack/salt-formulas/users-saltstack-formula
+    - /srv/saltstack/salt-formulas/zabbix-formula
+    - /srv/saltstack/salt-formulas/zabbix-saltstack-formula
 
 # By default, the Salt fileserver recurses fully into all defined environments
 # to attempt to find files. To limit this behavior so that the fileserver only
