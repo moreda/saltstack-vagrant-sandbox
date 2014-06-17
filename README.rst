@@ -9,7 +9,7 @@ In a previous incarnation of this repo I went for a multi-VM environment with a
 saltmaster and several minions. Now I simplified it assuming a master-less conf
 to try formulas.
 
-I predefined three flavors of minion:
+I predefined four flavors of minion:
 
 * ``ubuntu1204``: Ubuntu 12.04 LTS with IP addresses 192.168.56.20/24 and
   172.16.32.20/24
@@ -18,7 +18,7 @@ I predefined three flavors of minion:
 * ``centos65``: CentOS 6.5 with IP addresses 192.168.56.22/24 and
   172.16.32.22/24
 * ``centos7rc``: CentOS 7.0rc with IP addresses 192.168.56.23/24 and
-  172.16.32.23/24
+  172.16.32.23/24 (This box has some problems so YMMV)
 
 I'm not a Ruby literate so the ``Vagrantfile`` could be improved to make it more
 flexible, but so far it works for me :-)
@@ -28,10 +28,10 @@ Usage
 
 The usage is fairly simple:
 
-1. Clone this repository
-2. `Install Vagrant <http://www.vagrantup.com/downloads.html>`_ in your system (if
-   you don't have it already) along with
-   `VirtualBox <https://www.virtualbox.org/>`_
+1. Clone this repository.
+2. `Install Vagrant <http://www.vagrantup.com/downloads.html>`_ in your system
+   (if you don't have it already) along with `VirtualBox
+   <https://www.virtualbox.org/>`_.
 3. Put your formulas under ``saltstack/salt-formulas`` making sure that the name
    of the directory matches ``*-formula`` (e.g. ``zabbix-saltstack-formula`` or
    ``apache-formula``). You could even clone those formulas from their original
@@ -40,10 +40,10 @@ The usage is fairly simple:
    included you have to edit the file_roots of your /etc/salt/minion.
 4. Put your states ``top.sls`` file and specific non-formulaic files under
    ``saltstack/salt``
-5. Put your pillar ``top.sls`` file under ``saltstack/salt``
-6. Execute ``vagrant up`` and wait till the VMs are up and running (could take a
-   little while if you have to download the necessary vagrant boxes, but this is
-   just the first time)
+5. Put your pillar ``top.sls`` file under ``saltstack/pillar``
+6. Execute ``vagrant up name-of-the-VM`` and wait till it's up and running
+   (could take a little while if you have to download the necessary vagrant
+   box, but this is just the first time)
 7. Execute ``vagrant ssh name-of-the-VM`` and you're ready to manage each one of
    the VMs
 
