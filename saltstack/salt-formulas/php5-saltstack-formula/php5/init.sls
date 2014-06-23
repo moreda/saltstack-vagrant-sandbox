@@ -5,3 +5,6 @@ php5:
   pkg:
     - installed
     - name: {{ php5.pkg }}
+    {% if php5.version is defined %}
+    - version: {{ php5.version }}
+    {% endif %}

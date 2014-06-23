@@ -1,4 +1,10 @@
 php5-fpm:
+  # Overrides map.jinja
+  lookup:
+    version: 5.5.13+dfsg-2+deb.sury.org~precise+1
+    fpm:
+      version: 5.5.13+dfsg-2+deb.sury.org~precise+1
+
   # The files_switch key serves as a selector for alternative directories under
   # the formula files directory. Under the files directory could exist several
   # subdirectories named on the value of certain grains. By default the selector

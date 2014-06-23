@@ -4,9 +4,13 @@
 php5-fpm:
   pkg:
     - installed
-    - name: {{ php5.pkg_fpm }}
+    - name: {{ php5.fpm.pkg }}
+    {% if php5.fpm.version is defined %}
+    - version: {{ php5.fpm.version }}
+    {% endif %}
   service:
     - running
+    - name: {{ php5.fpm.service }}
     - enable: True
     - require:
       - pkg: php5-fpm
