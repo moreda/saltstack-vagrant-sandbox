@@ -3,10 +3,13 @@
 
 zabbix-server:
   pkg:
-    - name: {{ zabbix.pkg_server }}
+    - name: {{ zabbix.server.pkg }}
     - installed
+    {% if zabbix.server.version is defined %}
+    - version: {{ zabbix.server.version }}
+    {% endif %}
   service:
-    - name: {{ zabbix.service_server }}
+    - name: {{ zabbix.server.service }}
     - running
     - enable: True
     - require:
