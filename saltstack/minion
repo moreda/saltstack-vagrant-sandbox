@@ -410,7 +410,7 @@ file_roots:
     - /srv/saltstack/salt-formulas/sudo-saltstack-formula
     - /srv/saltstack/salt-formulas/system-saltstack-formula
     - /srv/saltstack/salt-formulas/users-saltstack-formula
-    - /srv/saltstack/salt-formulas/zabbix-formula
+    - /srv/saltstack/salt-formulas/varnish-saltstack-formula
     - /srv/saltstack/salt-formulas/zabbix-saltstack-formula
 
 # By default, the Salt fileserver recurses fully into all defined environments
