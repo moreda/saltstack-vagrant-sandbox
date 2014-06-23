@@ -8,6 +8,7 @@ shorewall-saltstack-formula git@github.com:moreda/shorewall-saltstack-formula.gi
 sudo-saltstack-formula      git@github.com:moreda/sudo-saltstack-formula.git
 system-saltstack-formula    git@github.com:moreda/system-saltstack-formula.git
 users-saltstack-formula     git@github.com:moreda/users-saltstack-formula.git
+varnish-saltstack-formula   git@github.com:moreda/varnish-saltstack-formula.git
+varnish-formula             git@github.com:saltstack-formulas/varnish-formula.git
 zabbix-saltstack-formula    git@github.com:moreda/zabbix-saltstack-formula.git
 zabbix-formula              git@github.com:saltstack-formulas/zabbix-formula.git
-varnish-formula             git@github.com:saltstack-formulas/varnish-formula.git

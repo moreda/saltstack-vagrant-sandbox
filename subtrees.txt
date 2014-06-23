@@ -8,6 +8,7 @@ shorewall-saltstack-formula saltstack/salt-formulas/shorewall-saltstack-formula 
 sudo-saltstack-formula      saltstack/salt-formulas/sudo-saltstack-formula master
 system-saltstack-formula    saltstack/salt-formulas/system-saltstack-formula master
 users-saltstack-formula     saltstack/salt-formulas/users-saltstack-formula master
+varnish-saltstack-formula   saltstack/salt-formulas/varnish-saltstack-formula master
+varnish-formula             saltstack/salt-formulas/varnish-formula master
 zabbix-saltstack-formula    saltstack/salt-formulas/zabbix-saltstack-formula master
 zabbix-formula              saltstack/salt-formulas/zabbix-formula master
-varnish-formula             saltstack/salt-formulas/varnish-formula master
