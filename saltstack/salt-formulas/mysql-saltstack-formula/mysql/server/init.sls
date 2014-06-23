@@ -10,10 +10,13 @@ include:
 mysql-server:
   pkg:
     - installed
-    - name: {{ mysql.pkg_server }}
+    - name: {{ mysql.server.pkg }}
+    {% if mysql.server.version is defined %}
+    - version: {{ mysql.server.version }}
+    {% endif %}
   service:
     - running
-    - name: {{ mysql.service_server }}
+    - name: {{ mysql.server.service }}
     - enable: True
     - require:
       - pkg: mysql-server

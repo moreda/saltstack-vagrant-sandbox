@@ -1,4 +1,13 @@
 mysql:
+  # Overrides map.jinja
+  lookup:
+    server:
+      version: 5.5.37-0ubuntu0.12.04.1
+    client:
+      version: 5.5.37-0ubuntu0.12.04.1
+    python:
+      version: 1.2.3-1ubuntu0.1
+
   # The files_switch key serves as a selector for alternative directories under
   # the formula files directory. Under the files directory could exist several
   # subdirectories named on the value of certain grains. By default the selector

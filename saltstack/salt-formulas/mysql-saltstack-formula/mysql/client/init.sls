@@ -10,4 +10,7 @@ include:
 mysql-client:
   pkg:
     - installed
-    - name: {{ mysql.pkg_client }}
+    - name: {{ mysql.client.pkg }}
+    {% if mysql.client.version is defined %}
+    - version: {{ mysql.client.version }}
+    {% endif %}

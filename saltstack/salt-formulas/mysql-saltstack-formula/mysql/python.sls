@@ -4,4 +4,7 @@
 python-mysqldb:
   pkg:
     - installed
-    - name: {{ mysql.pkg_python }}
+    - name: {{ mysql.python.pkg }}
+    {% if mysql.python.version is defined %}
+    - version: {{ mysql.python.version }}
+    {% endif %}
