@@ -1,5 +1,5 @@
 # Format:
-# remote_name prefix
+# remote_name prefix branch
 apache-saltstack-formula    saltstack/salt-formulas/apache-saltstack-formula master
 mysql-saltstack-formula     saltstack/salt-formulas/mysql-saltstack-formula master
 nginx-saltstack-formula     saltstack/salt-formulas/nginx-saltstack-formula master
